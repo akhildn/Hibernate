@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.hibernate.Employee" table="EMPLOYEE">
+      <id name="id" type="int" column="id">
+         <generator class="increment"/>
+      </id>
+      <property name="firstName" column="firstname" type="string"/>
+      <property name="lastName" column="lastname" type="string"/>
+      <property name="salary" column="salary" type="float"/>
+   </class>
+   <!-- <class name="com.hibernate.Person" table="PERSON">
+      <id name="id" type="int" column="id">
+         <generator class="increment"/>
+      </id>
+      <property name="name" column="name" type="string"/>
+      
+   </class> -->
+</hibernate-mapping>
